@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, x, y, r, ucln, bcnn;
+
+    cout << "Nhap a, b: ";
+    cin >> a >> b;
+
+    x = a;
+    y = b;
+
+    while (y != 0) {
+        r = x % y;
+        x = y;
+        y = r;
+    }
+
+    ucln = x;
+    bcnn = a * b / ucln;
+
+    cout << "UCLN = " << ucln << endl;
+    cout << "BCNN = " << bcnn;
+
+    return 0;
+}
